@@ -1,0 +1,139 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #55ffbd;
+  /* background: url('screen.png'); */
+  /* opacity: 0.2; */
+  background-size: 1250px;
+  background-repeat: no-repeat;
+}
+
+
+.hello {
+  margin: 197px 0 0 40px;
+  position: relative;
+}
+
+.hello > h1 {
+  font-size: 108px;
+  font-weight: 600;
+}
+.hello > h1:hover #photo {
+  display: '';
+}
+
+.hello > img {
+  /* display: none; */
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  bottom: 15px;
+  left: 285px;
+  border-radius: 150px;
+  z-index: -2;
+}
+
+.about {
+  margin: 31px 560px 0 45px;
+  opacity: 0;
+}
+
+.about > h2 {
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.links {
+  margin: 83px 0 0 45px;
+  opacity: 0;
+}
+
+.links > span {
+  font-size: 27px;
+  font-weight: 600; 
+}
+
+.links > span > a {
+  color: inherit;
+}
+
+.links > span:nth-child(1n+2) {
+  margin-left: 35px;
+}
+
+.links > span > a:hover {
+  text-decoration: line-through;
+}
+
+.works-link {
+  margin: 80px 0 0 45px;
+  opacity: 0;
+}
+
+.works-link > a {
+  font-size: 31px;
+  font-weight: 600; 
+  color: inherit;
+}
+
+
+
+
+
+/* ANIMATION */
+
+
+@keyframes movemove {
+  0% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: translate(0, -20px);
+  }
+}
+
+@-webkit-keyframes transition {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* @-moz-keyframes transition {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+} 
+@-o-keyframes transition {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes transition {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+} */
+
+.hello {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.about {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s, 0.3s;
+}
+.links {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s, 0.6s;
+}
+.works-link {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s, 0.9s;
+}
