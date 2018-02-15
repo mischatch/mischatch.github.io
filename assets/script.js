@@ -12,8 +12,3 @@ hello.addEventListener('mouseout', (e) => {
   img.style.display = 'none';
   e.target.style.color = 'black';
 });
-
-
-
-
-
