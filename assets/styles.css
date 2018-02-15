@@ -76,7 +76,7 @@ body {
 }
 
 .work {
-  margin: 197px 0 400px 0; 
+  margin: 197px 0 400px 80px; 
   padding: 0 0 0 45px;
 }
 
@@ -106,11 +106,13 @@ body {
 .back {
   background: black;
   width: 80px;
+  height: 100%;
   writing-mode: vertical-lr;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  position: fixed;
 }
 
 .back > a {
@@ -118,10 +120,13 @@ body {
   color: #55ffbd;
   font-size: 30px;
   font-weight: 600;
-  width: 100%;
-  height: 100%;
+  /* width: 100%; */
   text-align: center;
   line-height: 3;
+}
+
+.project1, .project2, .project3 {
+  opacity: 0;
 }
 
 
@@ -182,4 +187,25 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0.9s, 0.9s;
+}
+
+.project1 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.project2 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s, 0.3s;
+}
+.project3 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s, 0.6s;
 }

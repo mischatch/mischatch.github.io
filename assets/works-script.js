@@ -13,8 +13,7 @@ Array.from(projects).forEach(pr => {
     if(description.style.display === 'none'){
       description.style.display = '';
     } else {
-      description.style.display = 'none'
+      description.style.display = 'none';
     }
-    // debugger
   });
 });
