@@ -5,6 +5,7 @@ body {
   /* opacity: 0.2; */
   background-size: 1250px;
   background-repeat: no-repeat;
+  user-select: none;
 }
 
 
