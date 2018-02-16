@@ -49,7 +49,7 @@ body {
 
 .links > span {
   font-size: 27px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .links > span > a {
@@ -60,8 +60,9 @@ body {
   margin-left: 35px;
 }
 
-.links > span > a:hover {
+.links > span > a:hover, .project-links > a:hover {
   text-decoration: line-through;
+  cursor: pointer;
 }
 
 .works-link {
@@ -71,12 +72,12 @@ body {
 
 .works-link > a {
   font-size: 27px;
-  font-weight: 600; 
+  font-weight: 600;
   color: inherit;
 }
 
 .work {
-  margin: 197px 0 400px 80px; 
+  margin: 197px 0 400px 80px;
   padding: 0 0 0 45px;
 }
 
@@ -116,6 +117,7 @@ body {
 }
 
 .back > a {
+  transform: rotateZ(180deg);
   text-decoration: none;
   color: #55ffbd;
   font-size: 30px;
@@ -127,6 +129,20 @@ body {
 
 .project1, .project2, .project3 {
   opacity: 0;
+}
+
+.project-links {
+  font-size: 20px;
+  margin-top: -20px;
+  font-weight: 600;
+}
+
+.project-links > a {
+  color: inherit;
+}
+
+.project-links > a:nth-child(1n+2){
+  margin-left: 20px;
 }
 
 
@@ -151,7 +167,7 @@ body {
 /* @-moz-keyframes transition {
   0%   { opacity: 0; }
   100% { opacity: 1; }
-} 
+}
 @-o-keyframes transition {
   0%   { opacity: 0; }
   100% { opacity: 1; }
