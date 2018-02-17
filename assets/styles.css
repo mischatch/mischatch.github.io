@@ -68,7 +68,7 @@ body {
 
 .works-link {
   margin: 80px 0 0 45px;
-  /* opacity: 0; */
+  opacity: 0;
 }
 
 .works-link > a {
@@ -228,13 +228,13 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 0.6s, 0.6s;
 }
-/* .works-link {
+.works-link {
   animation: movemove 1.2s,
             transition 1.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0.9s, 0.9s;
-} */
+}
 
 .project1 {
   animation: movemove 1.2s,
