@@ -1,4 +1,4 @@
-Portfolio website version 2
+# Portfolio website version 2.0
 
-[live link][link]
-[link]: http://www.mischatch.me/
+[Live link][linkto]
+[linkto]: http://www.mischatch.me/
