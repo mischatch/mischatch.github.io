@@ -32,7 +32,8 @@ body {
 }
 
 .about {
-  margin: 31px 560px 0 45px;
+  margin: 31px 31px 0 45px;
+  width: 800px;
   opacity: 0;
 }
 
@@ -48,7 +49,7 @@ body {
 }
 
 .links > span {
-  font-size: 27px;
+  font-size: 33px;
   font-weight: 600;
 }
 
@@ -61,13 +62,13 @@ body {
 }
 
 .links > span > a:hover, .project-links > a:hover {
-  text-decoration: line-through;
+  text-decoration: underline;
   cursor: pointer;
 }
 
 .works-link {
   margin: 80px 0 0 45px;
-  opacity: 0;
+  /* opacity: 0; */
 }
 
 .works-link > a {
@@ -120,13 +121,12 @@ body {
   position: fixed;
 }
 
-.back > a {
+.back {
   transform: rotateZ(180deg);
   text-decoration: none;
   color: #55ffbd;
   font-size: 30px;
   font-weight: 600;
-  /* width: 100%; */
   text-align: center;
   line-height: 3;
 }
@@ -158,45 +158,31 @@ h3#pr1 {
 /* ANIMATION */
 
 @keyframes gradient {
-  0% {
-    background-color:  #55ffbd;
-  }
-  50% {
-    background-color: #55fff1;
-  }
-  100% {
-    background-color:  #55ffbd;
-  }
+  0% { background-color: #55ffbd; }
+  50% { background-color: #55fff1; }
+  100% { background-color:  #55ffbd; }
 }
 
 @webkit-keyframes gradient {
-  0% {
-    background: #55ffbd;
-  }
-  50% {
-    background: #55fff9;
-  }
-  100% {
-    background-color:  #55ffbd;
-  }
+  0% { background-color: #55ffbd; }
+  50% { background-color: #55fff9; }
+  100% { background-color: #55ffbd; }
+}
+@keyframes font-gradient {
+  0% { color: #55ffbd; }
+  50% { color: #55fff1; }
+  100% { color:  #55ffbd; }
 }
 
-body {
-  transition: all easy-in-out;
-  animation: gradient 10s infinite;
-  /* animation-iteration-count: infinite; */
-  /* animation-fill-mode: forwards; */
-  -webkit-animation: gradient 10s infinite;
+@webkit-keyframes font-gradient {
+  0% { color: #55ffbd; }
+  50% { color: #55fff9; }
+  100% { color: #55ffbd; }
 }
-
 
 @keyframes movemove {
-  0% {
-    transform: translate(0, 0px);
-  }
-  100% {
-    transform: translate(0, -20px);
-  }
+  0% { transform: translate(0, 0px); }
+  100% { transform: translate(0, -20px); }
 }
 
 @-webkit-keyframes transition {
@@ -204,21 +190,17 @@ body {
   100% { opacity: 1; }
 }
 
-/* @-moz-keyframes transition {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+body {
+  transition: all easy-in-out;
+  animation: gradient 10s infinite;
+  -webkit-animation: gradient 10s infinite;
 }
-@-o-keyframes transition {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
+
+.back > a {
+  transition: all easy-in-out;
+  animation: font-gradient 10s;
+  -webkit-animation: font-gradient 10s;
 }
-@keyframes transition {
-  0%   { opacity: 0; }
-  100% { opacity: 1; }
-} */
-
-
-
 
 #photo {
   animation: transition 1.2s;
@@ -246,13 +228,13 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 0.6s, 0.6s;
 }
-.works-link {
+/* .works-link {
   animation: movemove 1.2s,
             transition 1.2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0.9s, 0.9s;
-}
+} */
 
 .project1 {
   animation: movemove 1.2s,
