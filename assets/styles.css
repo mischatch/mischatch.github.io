@@ -124,7 +124,7 @@ body {
 .back {
   transform: rotateZ(180deg);
   text-decoration: none;
-  color: #55ffbd;
+  /* color: #55ffbd; */
   font-size: 30px;
   font-weight: 600;
   text-align: center;
@@ -159,22 +159,22 @@ h3#pr1 {
 
 @keyframes gradient {
   0% { background-color: #55ffbd; }
-  50% { background-color: #55fff1; }
+  50% { background-color: #55fff9; }
   100% { background-color:  #55ffbd; }
 }
 
-@webkit-keyframes gradient {
+@-webkit-keyframes gradient {
   0% { background-color: #55ffbd; }
   50% { background-color: #55fff9; }
   100% { background-color: #55ffbd; }
 }
 @keyframes font-gradient {
   0% { color: #55ffbd; }
-  50% { color: #55fff1; }
+  50% { color: #55fff9; }
   100% { color:  #55ffbd; }
 }
 
-@webkit-keyframes font-gradient {
+@-webkit-keyframes font-gradient {
   0% { color: #55ffbd; }
   50% { color: #55fff9; }
   100% { color: #55ffbd; }
@@ -196,10 +196,10 @@ body {
   -webkit-animation: gradient 10s infinite;
 }
 
-.back > a {
+.back {
   transition: all easy-in-out;
-  animation: font-gradient 10s;
-  -webkit-animation: font-gradient 10s;
+  animation: font-gradient 10s infinite;
+  -webkit-animation: font-gradient 10s infinite;
 }
 
 #photo {
