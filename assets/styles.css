@@ -1,6 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #55ffbd;
+  /* background-color: #55ffbd; */
   /* background: url('screen.png'); */
   /* opacity: 0.2; */
   background-size: 1250px;
@@ -91,6 +91,10 @@ body {
   width: fit-content;
 }
 
+.work-description {
+  margin-bottom: 90px;
+}
+
 .work-description > h4 {
   font-size: 45px;
   font-weight: 500;
@@ -145,9 +149,45 @@ body {
   margin-left: 20px;
 }
 
+h3#pr1 {
+  margin-left: -5px;
+}
+
 
 
 /* ANIMATION */
+
+@keyframes gradient {
+  0% {
+    background-color:  #55ffbd;
+  }
+  50% {
+    background-color: #55fff1;
+  }
+  100% {
+    background-color:  #55ffbd;
+  }
+}
+
+@webkit-keyframes gradient {
+  0% {
+    background: #55ffbd;
+  }
+  50% {
+    background: #55fff9;
+  }
+  100% {
+    background-color:  #55ffbd;
+  }
+}
+
+body {
+  transition: all easy-in-out;
+  animation: gradient 10s infinite;
+  /* animation-iteration-count: infinite; */
+  /* animation-fill-mode: forwards; */
+  -webkit-animation: gradient 10s infinite;
+}
 
 
 @keyframes movemove {
@@ -176,6 +216,15 @@ body {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 } */
+
+
+
+
+#photo {
+  animation: transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
 
 .hello {
   animation: movemove 1.2s,
