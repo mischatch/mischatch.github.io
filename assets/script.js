@@ -12,3 +12,8 @@ hello.addEventListener('mouseout', (e) => {
   img.style.display = 'none';
   e.target.style.color = 'black';
 });
+
+
+if (document.location.href === "http://www.mischatch.me/index.html") {
+  document.location.href = "http://www.mischatch.me/";
+}
