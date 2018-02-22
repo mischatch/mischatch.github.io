@@ -1,6 +1,6 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  /* background-color: #55ffbd; */
+  background-color: #55ffbd;
   /* background: url('screen.png'); */
   /* opacity: 0.2; */
   background-size: 1250px;
@@ -75,6 +75,7 @@ body {
   font-size: 27px;
   font-weight: 600;
   color: inherit;
+  cursor: pointer;
 }
 
 .work {
@@ -113,22 +114,31 @@ body {
   background: black;
   width: 80px;
   height: 100%;
-  writing-mode: vertical-lr;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   position: fixed;
-}
 
-.back {
-  transform: rotateZ(180deg);
   text-decoration: none;
-  /* color: #55ffbd; */
+  color: #55ffbd;
   font-size: 30px;
   font-weight: 600;
   text-align: center;
   line-height: 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.backname {
+  writing-mode: vertical-lr;
+
+  transform: rotateZ(180deg);
+}
+.arrow {
+  transform: rotate(0deg);
+  font-size: 17px;
 }
 
 .project1, .project2, .project3 {
@@ -156,6 +166,19 @@ h3#pr1 {
 
 
 /* ANIMATION */
+@keyframes grow {
+  0% { width: 0px;
+        color: black }
+  100% { width: 80px; }
+}
+
+@-webkit-keyframes grow {
+  0% { width: 0px;
+      color: black}
+  100% { width: 80px; }
+}
+
+
 
 @keyframes gradient {
   0% { background-color: #55ffbd; }
@@ -184,6 +207,10 @@ h3#pr1 {
   0% { transform: translate(0, 0px); }
   100% { transform: translate(0, -20px); }
 }
+@keyframes leftmove {
+  0% { transform: translate(-80px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
 
 @-webkit-keyframes transition {
   0%   { opacity: 0; }
@@ -192,18 +219,20 @@ h3#pr1 {
 
 body {
   transition: all easy-in-out;
-  animation: gradient 10s infinite;
-  -webkit-animation: gradient 10s infinite;
+  /* animation: gradient 10s infinite; */
+  /* -webkit-animation: gradient 10s infinite; */
 }
 
 .back {
   transition: all easy-in-out;
-  animation: font-gradient 10s infinite;
-  -webkit-animation: font-gradient 10s infinite;
+  animation: /* font-gradient 10s infinite, */
+              leftmove 0.7s;
+  -webkit-animation: /* font-gradient 10s infinite */
+                      leftmove 0.7s;
 }
 
 #photo {
-  animation: transition 1.2s;
+  animation: transition 0.8s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
