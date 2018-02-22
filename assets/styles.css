@@ -41,6 +41,7 @@ body {
   font-size: 31px;
   font-weight: 800;
   line-height: 1.2;
+  cursor: default;
 }
 
 .links {
@@ -91,6 +92,11 @@ body {
 
 .work-name {
   width: fit-content;
+  cursor: default;
+}
+
+.work-name > h3 {
+  cursor: pointer;
 }
 
 .work-description {
@@ -103,6 +109,7 @@ body {
   margin: 20px 400px 0 0;
   line-height: 1.3;
   margin-bottom: 30px;
+  cursor: default;
 }
 
 .works-body {
