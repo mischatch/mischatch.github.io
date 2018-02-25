@@ -51,19 +51,17 @@ body {
 .links {
   margin: 83px 0 0 45px;
   opacity: 0;
+  line-height: 1.5;
 }
 
 .links > span {
   font-size: 33px;
   font-weight: 600;
+  margin-right: 35px;
 }
 
 .links > span > a {
   color: inherit;
-}
-
-.links > span:nth-child(1n+2) {
-  margin-left: 35px;
 }
 
 .links > span > a:hover, .project-links > a:hover {
