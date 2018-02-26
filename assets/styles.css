@@ -37,7 +37,7 @@ body {
 
 .about {
   margin: 31px 31px 0 45px;
-  width: 800px;
+  max-width: 800px;
   opacity: 0;
 }
 
