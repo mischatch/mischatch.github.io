@@ -2,7 +2,7 @@
   .about > h2 {font-size: 40px !important;;}
   .hello > h1 {font-size: 130px;}
   .links { display: flex; flex-direction: column; }
-  .links > span {font-size: 50px !important;;}
+  .links > span {font-size: 45px !important;;}
   .works-link {margin-bottom: 140px;}
   .works-link > a {font-size: 50px !important;}
   .back {width: 130px; font-size: 50px;}
