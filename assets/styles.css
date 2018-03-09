@@ -41,7 +41,6 @@ body {
 }
 
 #photo {
-  /* display: none; */
   width: 230px;
   height: 230px;
   position: absolute;
