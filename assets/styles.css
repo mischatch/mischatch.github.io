@@ -1,4 +1,4 @@
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio:0) {
   .about > h2 {font-size: 40px !important;;}
   .hello > h1 {font-size: 130px;}
   .links { display: flex; flex-direction: column; }
