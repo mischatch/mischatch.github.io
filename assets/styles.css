@@ -302,3 +302,13 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 0.9s, 0.9s;
 }
+
+
+@media only screen and (min-width: 768px) {
+  .about > h2 {font-size: 45px;}
+  .hello > h1 {font-size: 130px;}
+  .links { display: flex; flex-direction: column; }
+  .links > span {font-size: 80px;}
+  .works-link {margin-bottom: 140px;}
+  .works-link > a {font-size: 80px;}
+}
