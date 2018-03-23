@@ -1,0 +1,320 @@
+@media only screen and (max-width: 900px)  {
+  .hello {margin: 170px 0 0 40px !important}
+  .hello > h1 {font-size: 60px !important; font-weight: 700 !important; color: white !important;}
+  #photo {width: 170px !important; height: 170px !important; left: 130px !important; display: block !important;}
+  .about > h2 {font-size: 23px !important;}
+  .links { display: flex; flex-direction: column; margin: 95px 0 0 45px !important;}
+  .links > span {font-size: 27px !important;}
+  .works-link {margin: 40px 0 40px 45px !important;}
+  .works-link > a {font-size: 27px !important;}
+  .back {width: 130px; font-size: 50px;}
+  .work {padding: 0 0 0 25px !important;}
+  .work-description > h4 {margin: 20px 20px 0 0 !important; font-size: 20px !important; }
+  .arrow {font-size: 45px;}
+  .work-name {font-size: 35px !important; margin-bottom: 35px !important;}
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #55ffbd;
+  /* background: url('screen.png'); */
+  /* opacity: 0.2; */
+  background-size: 1250px;
+  background-repeat: no-repeat;
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+.hello {
+  margin: 197px 0 0 40px;
+  position: relative;
+}
+
+.hello > h1 {
+  font-size: 108px;
+  font-weight: 600;
+  width: fit-content;
+  cursor: default;
+}
+
+#photo {
+  width: 230px;
+  height: 230px;
+  position: absolute;
+  bottom: 15px;
+  left: 285px;
+  border-radius: 150px;
+  z-index: -2;
+}
+
+.about {
+  margin: 31px 31px 0 45px;
+  max-width: 800px;
+  opacity: 0;
+}
+
+.about > h2 {
+  font-size: 31px;
+  font-weight: 800;
+  line-height: 1.2;
+  cursor: default;
+}
+
+.links {
+  margin: 83px 0 0 45px;
+  opacity: 0;
+  line-height: 1.5;
+}
+
+.links > span {
+  font-size: 33px;
+  font-weight: 600;
+  margin-right: 35px;
+}
+
+.links > span > a {
+  color: inherit;
+}
+
+.links > span > a:hover, .project-links > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.works-link {
+  margin: 80px 0 0 45px;
+  opacity: 0;
+}
+
+.works-link > a {
+  font-size: 27px;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
+}
+
+.work {
+  margin: 197px 0 400px 80px;
+  padding: 0 0 0 45px;
+}
+
+.work-name {
+  font-size: 85px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.work-name {
+  width: fit-content;
+  cursor: default;
+}
+
+.work-name > h3 {
+  cursor: pointer;
+}
+
+.work-description {
+  margin-bottom: 90px;
+}
+
+.work-description > h4 {
+  font-size: 45px;
+  font-weight: 500;
+  margin: 20px 0 0 0;
+  max-width: 800px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  cursor: default;
+}
+
+.works-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.back {
+  background: black;
+  width: 80px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: fixed;
+
+  text-decoration: none;
+  color: #55ffbd;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 3;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.backname {
+  writing-mode: vertical-lr;
+
+  transform: rotateZ(180deg);
+}
+.arrow {
+  transform: rotate(0deg);
+  font-size: 17px;
+}
+
+.project1, .project2, .project3, .project4 {
+  opacity: 0;
+}
+
+.project-links {
+  font-size: 20px;
+  margin-top: -20px;
+  font-weight: 600;
+}
+
+.project-links > a {
+  color: inherit;
+}
+
+.project-links > a:nth-child(1n+2){
+  margin-left: 20px;
+}
+
+h3#pr1 {
+  margin-left: -5px;
+}
+
+
+
+/* ANIMATION */
+@keyframes grow {
+  0% { width: 0px;
+        color: black }
+  100% { width: 80px; }
+}
+
+@-webkit-keyframes grow {
+  0% { width: 0px;
+      color: black}
+  100% { width: 80px; }
+}
+
+
+
+@keyframes gradient {
+  0% { background-color: #55ffbd; }
+  50% { background-color: #55fff9; }
+  100% { background-color:  #55ffbd; }
+}
+
+@-webkit-keyframes gradient {
+  0% { background-color: #55ffbd; }
+  50% { background-color: #55fff9; }
+  100% { background-color: #55ffbd; }
+}
+@keyframes font-gradient {
+  0% { color: #55ffbd; }
+  50% { color: #55fff9; }
+  100% { color:  #55ffbd; }
+}
+
+@-webkit-keyframes font-gradient {
+  0% { color: #55ffbd; }
+  50% { color: #55fff9; }
+  100% { color: #55ffbd; }
+}
+
+@keyframes movemove {
+  0% { transform: translate(0, 0px); }
+  100% { transform: translate(0, -20px); }
+}
+@keyframes leftmove {
+  0% { transform: translate(-80px, 0px); }
+  100% { transform: translate(0px, 0px); }
+}
+
+@-webkit-keyframes transition {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body {
+  transition: all easy-in-out;
+  /* animation: gradient 10s infinite; */
+  /* -webkit-animation: gradient 10s infinite; */
+}
+
+.back {
+  transition: all easy-in-out;
+  animation: /* font-gradient 10s infinite, */
+              leftmove 0.7s;
+  -webkit-animation: /* font-gradient 10s infinite */
+                      leftmove 0.7s;
+}
+
+#photo {
+  animation: transition 0.8s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.hello {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.about {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s, 0.3s;
+}
+.links {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s, 0.6s;
+}
+.works-link {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s, 0.9s;
+}
+
+.project1 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.project2 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.3s, 0.3s;
+}
+.project3 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.6s, 0.6s;
+}
+
+.project4 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s, 0.9s;
+}
