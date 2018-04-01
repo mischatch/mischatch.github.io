@@ -6,7 +6,7 @@
 
 [Live link](http://www.mischatch.me/)
 
-[Previous version](https://mischatch.github.io/)
+[Previous version](https://mischatch.github.io/mischatchv1/)
 
 
 # Features
