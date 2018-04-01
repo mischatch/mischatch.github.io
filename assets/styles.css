@@ -1,3 +1,16 @@
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio:0) {
+  .about > h2 {font-size: 40px !important;;}
+  .hello > h1 {font-size: 130px;}
+  .links { display: flex; flex-direction: column; }
+  .links > span {font-size: 50px !important;;}
+  .works-link {margin-bottom: 140px;}
+  .works-link > a {font-size: 50px !important;}
+  .back {width: 130px; font-size: 50px;}
+  .work {margin: 197px 0 400px 130px;}
+  .work-description > h4 {margin: 20px 100px 0 0;}
+  .arrow {font-size: 45px;}
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #55ffbd;
@@ -37,7 +50,7 @@ body {
 
 .about {
   margin: 31px 31px 0 45px;
-  width: 800px;
+  max-width: 800px;
   opacity: 0;
 }
 
@@ -51,19 +64,17 @@ body {
 .links {
   margin: 83px 0 0 45px;
   opacity: 0;
+  line-height: 1.5;
 }
 
 .links > span {
   font-size: 33px;
   font-weight: 600;
+  margin-right: 35px;
 }
 
 .links > span > a {
   color: inherit;
-}
-
-.links > span:nth-child(1n+2) {
-  margin-left: 35px;
 }
 
 .links > span > a:hover, .project-links > a:hover {
@@ -110,7 +121,8 @@ body {
 .work-description > h4 {
   font-size: 45px;
   font-weight: 500;
-  margin: 20px 400px 0 0;
+  margin: 20px 0 0 0;
+  max-width: 800px;
   line-height: 1.3;
   margin-bottom: 30px;
   cursor: default;
@@ -152,7 +164,7 @@ body {
   font-size: 17px;
 }
 
-.project1, .project2, .project3 {
+.project1, .project2, .project3, .project4 {
   opacity: 0;
 }
 
@@ -295,4 +307,12 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   animation-delay: 0.6s, 0.6s;
+}
+
+.project4 {
+  animation: movemove 1.2s,
+            transition 1.2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 0.9s, 0.9s;
 }

@@ -2,8 +2,6 @@
 
 [Live link](http://www.mischatch.me/)
 
-[Previous version](https://mischatch.github.io/)
-
 
 # Features
 * New simplified design
