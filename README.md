@@ -10,4 +10,3 @@
 
 ![Alt text](/assets/shot.png)
 * Don't forget to hover on "Hello!"
->>>>>>> refs/remotes/origin/master
