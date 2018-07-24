@@ -323,3 +323,10 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 1.2s, 1.2s;
 }
+.project6 {
+  animation: movemove 1.5s,
+            transition 1.5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s, 1.5s;
+}
