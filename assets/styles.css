@@ -66,15 +66,16 @@ body {
   .hello > h2 {font-size: 18.7vw;}
   #photo {left: unset; right: 16%;}
   .links {display: flex; flex-direction: column; justify-content: center; align-items: center;height: auto;padding-left:0; }
-  .links > span {margin-right: 0;}
-  .links > span:not(last-child) {margin-bottom: 20px;}
+  .links > span {margin-right: 0; padding: 10px;}
+  /*.links > span:not(last-child) {margin-bottom: 20px;}*/
 }
 
 @media screen and (max-width: 500px) {
   .hello > h1 {font-size: 24.4vw;}
   .about > h2 {font-size: 22px;}
   .links, .works-link {display: flex; flex-direction: column; justify-content: center; align-items: center;height: auto;padding-left:0; }
-  /*.links > span {margin-right: 0;}*/
+  .links > span {width: 100%; text-align: center; border-top: 2px solid black; margin-bottom: 0px;}
+  .links > span:last-child {border-bottom: 2px solid black;}
 
 }
 
