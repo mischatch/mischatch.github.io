@@ -16,3 +16,10 @@ const img = document.getElementById('photo');
 if (document.location.href === "http://www.mischatch.me/index.html") {
   document.location.href = "http://www.mischatch.me/";
 }
+
+// var width = img.outerHeight();
+// img.width(width);
+$(document).resize(function(){
+    var width = img.outerHeight();
+    img.width(width);
+})

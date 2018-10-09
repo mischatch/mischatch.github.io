@@ -1,4 +1,15 @@
-
+@media only screen and (max-width: 900px) and (-webkit-min-device-pixel-ratio:0) {
+  .about > h2 {font-size: 40px !important;;}
+  .hello > h1 {font-size: 130px;}
+  .links { display: flex; flex-direction: column; }
+  .links > span {font-size: 50px !important;;}
+  .works-link {margin-bottom: 140px;}
+  .works-link > a {font-size: 50px !important;}
+  .back {width: 130px; font-size: 50px;}
+  .work {margin: 197px 0 400px 130px;}
+  .work-description > h4 {margin: 20px 100px 0 0;}
+  .arrow {font-size: 45px;}
+}
 
 body {
   font-family: 'Montserrat', sans-serif;
@@ -15,67 +26,80 @@ body {
   height: 100vh;
 }
 
-.landing { width: 100%; height: 100%;}
 
-.hello, .about, .links, .works-link {box-sizing: border-box; padding-left: 20px; opacity: 0}
-
-.hello { height: 35%; position: relative; display: flex; align-items: flex-end;}
-
-.hello > h1 { font-size: 15vh; font-weight: 700; margin: 0 0 -2vh -1vh;z-index: 1;}
-
-.hello > h1:hover{ color: white;}
-
-#photo { position: absolute; height: 80%; border-radius: 50%; bottom: 0; left: 40vh;}
-
-.about { height: 35%;padding-top: 40px; width: 90%;}
-
-.about > h2 {font-size: 3.5vh; font-weight: 700; line-height: 1.1;}
-
-.links { height: 20%;}
-
-.links > span { margin-right: 40px; font-size: 3vh; font-weight: 700; text-transform: uppercase;display: inline-block; position: relative;}
-
-.links > span > a {color: inherit; cursor: pointer;}
-.links > span > a::after {display: block; content: ''; height: 4px; position: absolute; width: 100%; transition: all 0.25s; background: white;left: 0; transform: scaleX(0)}
-.links > span > a:hover::after { transform: scaleX(1); }
-
-.links > span > a:hover, .project-links > a:hover {color: white;}
-
-.works-link { height: 10%;font-size: 3vh; font-weight: 700; text-transform: uppercase;}
-
-.works-link > a {color: inherit; cursor: pointer; position: relative;}
-.works-link > a::after {display: block; content: ''; height: 4px; position: absolute; width: 100%; transition: all 0.25s; background: white;left: 0; transform: scaleX(0)}
-
-.works-link > a:hover {color: white;}
-.works-link > a:hover::after {transform: scaleX(1);}
-
-
-@media screen and (max-width: 900px){
-  .hello, .about, .links, .works-link {}
-  .about {width: 100%;padding-right: 20px;height: auto;padding-top: 40px;}
-  .about > h2 {font-size: 4.4vw;}
-  .links {padding-top: 40px;}
+.hello {
+  padding: 197px 0 0 40px;
+  position: relative;
 }
 
-@media screen and (max-width: 770px){
-  .links {display: flex; flex-wrap: wrap; justify-content: center;}
-  .works-link {display: flex; flex-direction: column; justify-content: center; align-items: center;height: auto;padding:30px 0 30px 0;}
+.hello > h1 {
+  font-size: 10vw;
+  font-weight: 600;
+  width: fit-content;
+  cursor: default;
+  color: black;
+  transition: All 0.25s;
 }
 
-@media screen and (max-width: 650px) {
-  .hello > h2 {font-size: 18.7vw;}
-  #photo {left: unset; right: 16%;}
-  .links {display: flex; flex-direction: column; justify-content: center; align-items: center;height: auto;padding-left:0; }
-  .links > span {margin-right: 0;}
-  .links > span:not(last-child) {margin-bottom: 20px;}
+.hello > h1:hover{
+  color: white;
 }
 
-@media screen and (max-width: 500px) {
-  .hello > h1 {font-size: 24.4vw;}
-  .about > h2 {font-size: 22px;}
-  .links, .works-link {display: flex; flex-direction: column; justify-content: center; align-items: center;height: auto;padding-left:0; }
-  /*.links > span {margin-right: 0;}*/
+#photo {
+  /* display: none; */
+  width: 18vw;
+  height: 18vw;
+  position: absolute;
+  bottom: 15px;
+  left: 28vw;
+  border-radius: 18vw;
+  z-index: -2;
+}
 
+.about {
+  margin: 31px 31px 0 45px;
+  max-width: 71vw;
+  opacity: 0;
+}
+
+.about > h2 {
+  font-size: 2.8vw;
+  font-weight: 800;
+  line-height: 1.2;
+  cursor: default;
+}
+
+.links {
+  margin: 83px 0 0 45px;
+  opacity: 0;
+  line-height: 1.5;
+}
+
+.links > span {
+  font-size: 2.8vw;
+  font-weight: 600;
+  margin-right: 35px;
+}
+
+.links > span > a {
+  color: inherit;
+}
+
+.links > span > a:hover, .project-links > a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.works-link {
+  margin: 80px 0 0 45px;
+  opacity: 0;
+}
+
+.works-link > a {
+  font-size: 2.7vw;
+  font-weight: 600;
+  color: inherit;
+  cursor: pointer;
 }
 
 .work {
@@ -93,7 +117,7 @@ body {
   width: fit-content;
   cursor: default;
 }
-
+  
 
 .work-name > h3 {
   cursor: pointer;
