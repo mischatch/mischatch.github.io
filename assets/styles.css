@@ -98,10 +98,16 @@ body {
 
 .work-name > h3 {
   cursor: pointer;
+  transition: all 0.25s;
+}
+
+.work-name > h3:hover {
+  color: white;
 }
 
 .work-description {
   margin-bottom: 90px;
+  display: none;
 }
 
 .work-description > h4 {
@@ -139,6 +145,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  transition: all 0.25s;
+}
+
+.back:hover {
+  color: white;
 }
 .backname {
   writing-mode: vertical-lr;
@@ -158,10 +169,17 @@ body {
   font-size: 20px;
   margin-top: -20px;
   font-weight: 600;
+  opacity: 0;
+  transition: 1s;
+}
+
+.showLinks {
+  opacity: 1;
 }
 
 .project-links > a {
   color: inherit;
+  transition: all 0.25s;
 }
 
 .project-links > a:nth-child(1n+2){
