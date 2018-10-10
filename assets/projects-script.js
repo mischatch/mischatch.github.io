@@ -30,7 +30,7 @@ $(document).ready(function(){
   link.on('click', function(e){
     e.preventDefault();
     var href = this.href;
-    gtag('event', 'click', { 'event_category': 'project дштл', 'event_label': href });
+    gtag('event', 'click', { 'event_category': 'project href', 'event_label': href });
   })
 
   closeOthers = function(link){
