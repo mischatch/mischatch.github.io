@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  console.log('pros ready');
+  console.log('Proj ready! Hey There!');
 
   var projectName = $('.work-name');
   projectName.on('click', function(e){
