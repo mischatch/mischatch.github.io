@@ -10,20 +10,19 @@ $(document).ready(function(){
     var $container = $("html,body");
 
 
-    if(opened){
-      description.removeClass('expanded').slideToggle(300, function(){
-          $(this).find('.project-links').toggleClass('showLinks');
-      });
-    } else {
-      closeOthers(this);
-      $(this).siblings('.work-description').toggleClass('expanded').slideToggle(300, function(){
-          $(this).find('.project-links').toggleClass('showLinks');
-      });
-      // $container.animate({scrollTop: $(this).offset().top  - $container.offset().top + $container.scrollTop(), scrollLeft: 0},300);
-      $(this).get(0).scrollIntoView(true);
-      var name = $(this).find('h1').html();
-      gtag('event', 'click', { 'event_category': 'project Name', 'event_label': name });
-    }
+      if (!opened) {
+          closeOthers(this);
+          $(this).siblings('.work-description').toggleClass('expanded').slideToggle(300, function () {
+              $(this).find('.project-links').toggleClass('showLinks');
+          });
+          $(this).get(0).scrollIntoView(true);
+          var name = $(this).find('h3').html();
+          gtag('event', 'click', {'event_category': 'project Name', 'event_label': name});
+      } else {
+          description.removeClass('expanded').slideToggle(300, function () {
+              $(this).find('.project-links').toggleClass('showLinks');
+          });
+      }
 
   })
 
