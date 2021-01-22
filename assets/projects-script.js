@@ -28,7 +28,6 @@ $(document).ready(function(){
 
   var link = $('.project-links a');
   link.on('click', function(e){
-    e.preventDefault();
     var href = this.href;
     gtag('event', 'click', { 'event_category': 'project href', 'event_label': href });
   })
