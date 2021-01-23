@@ -86,7 +86,6 @@ $(document).ready(function(){
     colorPicker.on(['color:change'], function(color) {
         $('body').css("background-color", color.hexString);
 
-        console.log('new background', color.hexString)
         setCookie('background', color.hexString, 30);
     });
 
