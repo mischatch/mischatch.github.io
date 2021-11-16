@@ -1,6 +1,6 @@
 # Portfolio website version 2.0
 
-[Live link](http://www.mischatch.me/)
+[Live link](http://www.mischatch.com/)
 
 
 # Features
